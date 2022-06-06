@@ -14,11 +14,11 @@ with features:
 
 # Sample Images (1000 SPP)
 
-<img src="md.assets/readme/random.png" alt="random" style="zoom:80%;" />
+<img src="md.assets/readme/random.png" alt="random"  />
 
-<img src="md.assets/readme/final_scene.png" alt="final_scene" style="zoom:80%;" />
+<img src="md.assets/readme/final_scene.png" alt="final_scene"  />
 
-<img src="md.assets/readme/cornell_box.png" alt="cornell_box" style="zoom:80%;" />
+<img src="md.assets/readme/cornell_box.png" alt="cornell_box"  />
 
 # Build
 
