@@ -286,6 +286,7 @@ image select_image(std::string scene_name ) {
         vfov = 20.0;
         aperture = 0.1;
         world = bvh_node(random_scene(lights), time0, time1);
+        dist_to_focus = 15.8;
         samples_per_pixel = 1000;
     } else if (scene_name == "two_spheres") {
         vfov = 20.0;
