@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
 
     image image = select_image(scene_name);
 
-    bool sanity_check = true;
+    bool sanity_check = false;
     if (sanity_check)
         image.spp = 2;
 

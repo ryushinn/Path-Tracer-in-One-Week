@@ -99,7 +99,7 @@ inline vec3 operator/(const vec3 &v, double t) {
 }
 
 inline vec3 abs(const vec3 &v) {
-    return {abs(v[0]), abs(v[1]), abs(v[2])};
+    return {fabs(v[0]), fabs(v[1]), fabs(v[2])};
 }
 
 inline bool operator==(const vec3 &lhs, const vec3 &rhs) {
