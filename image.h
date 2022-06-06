@@ -94,7 +94,7 @@ hittable_list two_perlin_spheres(shared_ptr<hittable_list> &lights) {
 
 hittable_list earth(shared_ptr<hittable_list> &lights) {
     hittable_list objects;
-    shared_ptr<texture> earth_texture = make_shared<image_texture>("earthmap.jpg");
+    shared_ptr<texture> earth_texture = make_shared<image_texture>("../earthmap.jpg");
     shared_ptr<material> earth_material = make_shared<lambertian>(earth_texture);
     objects.add(make_shared<sphere>(point3(0, 0, 0), 2, earth_material));
 
@@ -234,7 +234,7 @@ hittable_list final_scene(shared_ptr<hittable_list> &lights) {
     boundary = make_shared<sphere>(point3(0, 0, 0), 5000, make_shared<dielectric>(1.5));
     objects.add(make_shared<constant_medium>(boundary, .0001, color(1, 1, 1)));
 
-    auto emat = make_shared<lambertian>(make_shared<image_texture>("earthmap.jpg"));
+    auto emat = make_shared<lambertian>(make_shared<image_texture>("../earthmap.jpg"));
     objects.add(make_shared<sphere>(point3(400, 200, 400), 100, emat));
     auto pertext = make_shared<noise_texture>(0.1);
     objects.add(make_shared<sphere>(point3(220, 280, 300), 80, make_shared<lambertian>(pertext)));
