@@ -12,7 +12,7 @@ with features:
 - bounding volume hierarchy
 - multi-thread accelerated rendering with OpenMP
 
-# Sample Images (1000 SPP)
+# Sample Images
 
 <img src="md.assets/readme/random.png" alt="random"  />
 
